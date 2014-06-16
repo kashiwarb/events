@@ -1,17 +1,16 @@
-アジェンダ
+Ruby と Rails のインストール
 
-=======================
+========================
 
-## 日時
-2014年6月18日(水)
-
-## 場所
-Nobless Oblige 
-
-## Git と Rails のインストール
+## Ruby と Rails のインストール
 
 #### ・Mac
 XCoceを一番はじめに入れておくこと
+
+##### 用語説明
+- Homebrew ： MacOS用のパッケージ管理ツール。いろいろなプログラミング言語やツールのインストールやアンインストールが行なえる。
+- rbenv ： Rubyのバージョン管理ツール。様々なバージョンのRubyのインストールができ、バージョンの切り替えができるツール。Linuxでも使える。
+- gem ： Rubyをインストールすると入る。プログラム内で使用するライブラリの操作が行なえる。PerlでいうCPAN、.NETでいうNuGet
 
 ##### 1.HomeBrew のインストール
 terminalで以下を実行
@@ -28,6 +27,12 @@ brew install readline
 brew install ruby-build
 brew install rbenv
 ```
+rbenvのインストール後、__~/.bash_profile__に以下を追加してパスを通す。__実行後ターミナルを再起動__
+```
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+```
+
 
 ##### 4.Rubyのインストール
 rbenvでインストールできるRubyの確認
