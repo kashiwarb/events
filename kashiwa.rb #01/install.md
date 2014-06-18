@@ -5,6 +5,8 @@ Ruby と Rails のインストール
 ## Ruby と Rails のインストール
 
 #### ・Mac
+[参考](http://www.oiax.jp/rails/zakkan/rails_3_1_installation_on_macosx.html)
+
 Xcodeを一番はじめに入れておくこと
 
 ##### 用語説明
@@ -55,12 +57,15 @@ ruby -v
 うまくインストールされていればインストールしたバージョンが表示されます。
 
 ##### 5.Railsのインストール
+gemを最新版に更新して、gemでrailsをインストール
 ```
+gem update
 gem install rails
 ```
 これでOK
 
 #### ・Windows
+[参考](http://www.oiax.jp/rails/zakkan/rails_3_1_installation_on_windows.html)
 
 ##### 1.RubyインストーラーとDevKitをダウンロード
 - Rubyインストーラーを使う方法
@@ -70,17 +75,14 @@ gem install rails
 ##### 3.Railsのインストール
 - gem のアップデート
 ```
-gem update 
-gem upgrade
+gem update
 ```
 - Rails のインストール
 ```
-gem install rails 
+gem install rails
 ```
 コレでOK(要確認)
 
-
-## 動かしてみる
-
-
-
+## Scaffoldで感じをつかむ
+[参考](http://www.oiax.jp/rails/zakkan/rails_3_1_installation_on_windows.html)  
+__動作確認用の新規アプリケーションの作成から下__を実行していく
