@@ -12,23 +12,16 @@ RailsはRuby専用。他の言語にも似たようなフレームワークは�
 MVC(Model View Controller)の略、ソフトウェアを３つの構成に分けて構築する設計思想。Modelは業務処理、Viewは画面入出力、ControllerはModelとViewを接続する処理を担います。RailsはMVCモデルを採用しているフレームワーク。
 
 - Railsプロジェクトの__超基本的な構成__
-      ・app  
-        ・controllers  
-          Controllerクラスを記述
-        ・models
-          Modelクラスを記述
-        ・view
-          .erbや.slimで画面を記述
-      ・config  
-        ・database.yml  
-          データベース接続設定を記述
-        ・routes.rb  
-        ・画面繊維を記述
-      ・db  
-        ・migrate  
-            データベースの変更が記述されていく
-      ・Gemfile  
-        Ruby、Railsのバージョン、使用されるgemを記述する
+>app  
+　L controllers  ← Controllerクラスを記述  
+　L models       ← Modelクラスを記述  
+　L view         ← .erbや.slimで画面を記述  
+config  
+　L database.yml ← データベース接続設定を記述  
+　L routes.rb    ← 画面遷移を記述
+db  
+　L migrate      ← データベースの変更が記述されていく  
+Gemfile          ← Ruby、Railsのバージョン、使用されるgemを記述する
 
 - CSSは何処に書けばいいか？
 app/assets/styleseets内
@@ -38,6 +31,6 @@ app/assets/styleseets内
 
 
 ## 次回以降の開催について
-- それぞれ、作成したいものを作って行くもくもく形式で行なう。
+- 作成したいものをそれぞれ作るもくもく形式で行なう。
 - 次回は７月２３日に予定
 - LTもやりたい
